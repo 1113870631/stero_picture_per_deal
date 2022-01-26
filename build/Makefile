@@ -57,10 +57,10 @@ RM = /usr/share/cmake-3.22.1-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ww/opencv/标定图片
+CMAKE_SOURCE_DIR = /home/ww/opencv/biaoding
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ww/opencv/标定图片/build
+CMAKE_BINARY_DIR = /home/ww/opencv/biaoding/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/share/cmake-3.22.1-linux-x86_64/bin/cpack --config ./CPackSourceConfig.cmake /home/ww/opencv/标定图片/build/CPackSourceConfig.cmake
+	/usr/share/cmake-3.22.1-linux-x86_64/bin/cpack --config ./CPackSourceConfig.cmake /home/ww/opencv/biaoding/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/标定图片/build/CMakeFiles /home/ww/opencv/标定图片/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/biaoding/build/CMakeFiles /home/ww/opencv/biaoding/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/标定图片/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/biaoding/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

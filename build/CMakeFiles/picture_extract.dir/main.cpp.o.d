@@ -1,5 +1,5 @@
 CMakeFiles/picture_extract.dir/main.cpp.o: \
- /home/ww/opencv/标定图片/main.cpp /usr/include/stdc-predef.h \
+ /home/ww/opencv/biaoding/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/7/iostream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \

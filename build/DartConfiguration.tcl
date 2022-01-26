@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/ww/opencv/标定图片
-BuildDirectory: /home/ww/opencv/标定图片/build
+SourceDirectory: /home/ww/opencv/biaoding
+BuildDirectory: /home/ww/opencv/biaoding/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/share/cmake-3.22.1-linux-x86_64/bin/cmake" "/home/ww/opencv/标定图片"
+ConfigureCommand: "/usr/share/cmake-3.22.1-linux-x86_64/bin/cmake" "/home/ww/opencv/biaoding"
 MakeCommand: /usr/share/cmake-3.22.1-linux-x86_64/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/x86_64-linux-gnu-g++-7

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ww/opencv/标定图片/main.cpp" "CMakeFiles/picture_extract.dir/main.cpp.o" "gcc" "CMakeFiles/picture_extract.dir/main.cpp.o.d"
+  "/home/ww/opencv/biaoding/main.cpp" "CMakeFiles/picture_extract.dir/main.cpp.o" "gcc" "CMakeFiles/picture_extract.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

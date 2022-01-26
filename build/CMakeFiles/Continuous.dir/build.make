@@ -53,10 +53,10 @@ RM = /usr/share/cmake-3.22.1-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ww/opencv/标定图片
+CMAKE_SOURCE_DIR = /home/ww/opencv/biaoding
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ww/opencv/标定图片/build
+CMAKE_BINARY_DIR = /home/ww/opencv/biaoding/build
 
 # Utility rule file for Continuous.
 
@@ -82,6 +82,6 @@ CMakeFiles/Continuous.dir/clean:
 .PHONY : CMakeFiles/Continuous.dir/clean
 
 CMakeFiles/Continuous.dir/depend:
-	cd /home/ww/opencv/标定图片/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ww/opencv/标定图片 /home/ww/opencv/标定图片 /home/ww/opencv/标定图片/build /home/ww/opencv/标定图片/build /home/ww/opencv/标定图片/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ww/opencv/biaoding/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ww/opencv/biaoding /home/ww/opencv/biaoding /home/ww/opencv/biaoding/build /home/ww/opencv/biaoding/build /home/ww/opencv/biaoding/build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Continuous.dir/depend
 

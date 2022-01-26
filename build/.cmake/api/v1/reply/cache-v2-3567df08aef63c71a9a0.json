@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "123_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247/build"
-		},
-		{
-			"name" : "123_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "123_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247"
-		},
-		{
 			"name" : "BUILD_TESTING",
 			"properties" : 
 			[
@@ -103,11 +67,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -119,7 +83,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247/build"
+			"value" : "/home/ww/opencv/biaoding/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -223,10 +187,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/x86_64-linux-gnu-g++-7"
 		},
 		{
@@ -351,10 +315,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/x86_64-linux-gnu-gcc-7"
 		},
 		{
@@ -594,12 +558,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -671,7 +639,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247"
+			"value" : "/home/ww/opencv/biaoding"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1647,11 +1615,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/git"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1787,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247/build"
+			"value" : "/home/ww/opencv/biaoding/build"
 		},
 		{
 			"name" : "picture_extract_IS_TOP_LEVEL",
@@ -1811,7 +1779,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ww/opencv/\u6807\u5b9a\u56fe\u7247"
+			"value" : "/home/ww/opencv/biaoding"
 		}
 	],
 	"kind" : "cache",
