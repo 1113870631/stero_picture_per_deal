@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/ww/opencv/标定图片/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/picture_extract.dir/main.cpp.o -c /home/ww/opencv/标定图片/main.cpp",
+  "file": "/home/ww/opencv/标定图片/main.cpp"
+}
+]
