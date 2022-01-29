@@ -125,6 +125,7 @@ all: cmake_check_build_system
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	rm ./out/*
 .PHONY : clean
 
 # The main clean target
