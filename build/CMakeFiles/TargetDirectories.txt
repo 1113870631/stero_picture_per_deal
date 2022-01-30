@@ -26,7 +26,7 @@
 /home/ww/opencv/biaoding/build/CMakeFiles/ContinuousCoverage.dir
 /home/ww/opencv/biaoding/build/CMakeFiles/ContinuousMemCheck.dir
 /home/ww/opencv/biaoding/build/CMakeFiles/ContinuousSubmit.dir
-/home/ww/opencv/biaoding/build/CMakeFiles/picture_extract.dir
+/home/ww/opencv/biaoding/build/CMakeFiles/jibian.dir
 /home/ww/opencv/biaoding/build/CMakeFiles/package.dir
 /home/ww/opencv/biaoding/build/CMakeFiles/package_source.dir
 /home/ww/opencv/biaoding/build/CMakeFiles/test.dir

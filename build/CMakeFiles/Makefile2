@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/ww/opencv/biaoding/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/picture_extract.dir/all
+all: CMakeFiles/jibian.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -99,7 +99,7 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/picture_extract.dir/clean
+clean: CMakeFiles/jibian.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -831,30 +831,30 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/picture_extract.dir
+# Target rules for target CMakeFiles/jibian.dir
 
 # All Build rule for target.
-CMakeFiles/picture_extract.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ww/opencv/biaoding/build/CMakeFiles --progress-num=1,2 "Built target picture_extract"
-.PHONY : CMakeFiles/picture_extract.dir/all
+CMakeFiles/jibian.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ww/opencv/biaoding/build/CMakeFiles --progress-num=1,2 "Built target jibian"
+.PHONY : CMakeFiles/jibian.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/picture_extract.dir/rule: cmake_check_build_system
+CMakeFiles/jibian.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/biaoding/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/picture_extract.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/jibian.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ww/opencv/biaoding/build/CMakeFiles 0
-.PHONY : CMakeFiles/picture_extract.dir/rule
+.PHONY : CMakeFiles/jibian.dir/rule
 
 # Convenience name for target.
-picture_extract: CMakeFiles/picture_extract.dir/rule
-.PHONY : picture_extract
+jibian: CMakeFiles/jibian.dir/rule
+.PHONY : jibian
 
 # clean rule for target.
-CMakeFiles/picture_extract.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/clean
-.PHONY : CMakeFiles/picture_extract.dir/clean
+CMakeFiles/jibian.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/clean
+.PHONY : CMakeFiles/jibian.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

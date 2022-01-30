@@ -125,7 +125,6 @@ all: cmake_check_build_system
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
-	rm ./out/*
 .PHONY : clean
 
 # The main clean target
@@ -512,24 +511,24 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named picture_extract
+# Target rules for targets named jibian
 
 # Build rule for target.
-picture_extract: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picture_extract
-.PHONY : picture_extract
+jibian: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 jibian
+.PHONY : jibian
 
 # fast build rule for target.
-picture_extract/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/build
-.PHONY : picture_extract/fast
+jibian/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/build
+.PHONY : jibian/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -537,7 +536,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -545,7 +544,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picture_extract.dir/build.make CMakeFiles/picture_extract.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/jibian.dir/build.make CMakeFiles/jibian.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -587,7 +586,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... picture_extract"
+	@echo "... jibian"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

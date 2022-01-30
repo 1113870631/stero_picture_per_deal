@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jan 29 13:45:55 2022
+# Make data base, printed on Sun Jan 30 11:39:05 2022
 
 # Variables
 
@@ -28,6 +28,8 @@ XDG_SESSION_TYPE = x11
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 2
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -41,11 +43,9 @@ CURDIR := /home/ww/opencv/biaoding
 # makefile
 SHELL = /bin/sh
 # environment
-VTE_VERSION = 5202
-# environment
 VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn","_translationsConfigFile":"/home/ww/.config/Code/clp/85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn/tcf.json","_cacheRoot":"/home/ww/.config/Code/clp/85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ww/.config/Code/clp/85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn/899d46d82c4c95423fb7e10e68eba52050e30ba3","_corruptedFile":"/home/ww/.config/Code/clp/85dc8b33bfa057e31dfd84e9a10f67e1.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-_ = /usr/bin/code
+_ = /usr/share/code/code
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -53,7 +53,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 2
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # environment
 USERNAME = ww
 # environment
@@ -71,9 +71,9 @@ ROS_PACKAGE_PATH = /opt/ros/melodic/share
 # environment
 ROS_PYTHON_VERSION = 2
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f1b1d5d9-12bb-42d2-b459-733cc0f8db03.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7aaaf390-702c-4b5a-a260-7203a4902da4.sock
 # environment
-VSCODE_CWD = /home/ww/opencv/biaoding
+VSCODE_CWD = /home/ww
 # environment
 CLUTTER_IM_MODULE = xim
 # default
@@ -87,7 +87,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = exfxcxdxbxbxbxbxbxbxbx
 # environment
-SESSION_MANAGER = local/ww:@/tmp/.ICE-unix/2596,unix/ww:/tmp/.ICE-unix/2596
+SESSION_MANAGER = local/ww:@/tmp/.ICE-unix/2554,unix/ww:/tmp/.ICE-unix/2554
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -103,8 +103,6 @@ VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
 CMAKE_PREFIX_PATH = /opt/ros/melodic
 # environment
 LS_COLORS = di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=31;40:cd=31;40:su=31;40:sg=31;40:tw=31;40:ow=31;40:
@@ -112,6 +110,8 @@ LS_COLORS = di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=31;40:cd=31;40:su=31
 ROS_DISTRO = melodic
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4369
 # automatic
 %F = $(notdir $%)
 # environment
@@ -125,7 +125,7 @@ PWD = /home/ww/opencv/biaoding
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 2673
+SSH_AGENT_PID = 2631
 # environment
 PKG_CONFIG_PATH = /opt/ros/melodic/lib/pkgconfig
 # environment
@@ -138,8 +138,6 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProce
 HOME = /home/ww
 # environment
 LD_LIBRARY_PATH = /opt/ros/melodic/lib
-# environment
-VSCODE_CLI = 1
 # environment
 VSCODE_CODE_CACHE_PATH = /home/ww/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
 # environment
@@ -160,8 +158,6 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 XDG_VTNR = 2
 # environment
 MAKELEVEL := 0
-# environment
-COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -169,7 +165,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 1
+SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
@@ -187,7 +183,7 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/ww/opencv
+OLDPWD = /home/ww
 # default
 .VARIABLES := 
 # automatic
@@ -233,11 +229,9 @@ LC_ALL = C
 # environment
 QT4_IM_MODULE = xim
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/118ad2f1_15d8_4241_963c_60b90f57649b
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.71
 # default
 SUFFIXES := 
 # environment
@@ -248,6 +242,8 @@ WINDOWPATH = 2
 ROSLISP_PACKAGE_DIRECTORIES = 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
@@ -255,11 +251,9 @@ AUTOJUMP_ERROR_PATH = /home/ww/.local/share/autojump/errors.log
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 3404
+VSCODE_PID = 4369
 # variable set hash-table stats:
-# Load=123/1024=12%, Rehash=0, Collisions=19/145=13%
+# Load=120/1024=12%, Rehash=0, Collisions=17/142=12%
 
 # Pattern-specific Variable Values
 
@@ -267,9 +261,9 @@ VSCODE_PID = 3404
 
 # Directories
 
-# . (device 66310, inode 1560647): 17 files, no impossibilities.
+# . (device 66310, inode 1560647): 18 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 18 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -285,8 +279,8 @@ all:
 #  File has not been updated.
 
 # Not a target:
-Makefile:
  
+Makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -320,12 +314,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 198 B / avg = 7 B
-# current buf: size = 8162 B / used = 198 B / count = 25 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 204 B / avg = 7 B
+# current buf: size = 8162 B / used = 204 B / count = 26 / avg = 7 B
 
-# strcache performance: lookups = 28 / hit rate = 10%
+# strcache performance: lookups = 29 / hit rate = 10%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=8/28=29%
-# Finished Make data base on Sat Jan 29 13:45:55 2022
+# Load=26/8192=0%, Rehash=0, Collisions=9/29=31%
+# Finished Make data base on Sun Jan 30 11:39:05 2022
 
  

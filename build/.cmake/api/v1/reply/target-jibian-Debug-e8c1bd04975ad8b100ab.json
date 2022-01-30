@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "picture_extract"
+			"path" : "jibian"
 		}
 	],
 	"backtrace" : 1,
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "picture_extract::@6890427a1f51a3e7e1df",
+	"id" : "jibian::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -155,8 +155,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "picture_extract",
-	"nameOnDisk" : "picture_extract",
+	"name" : "jibian",
+	"nameOnDisk" : "jibian",
 	"paths" : 
 	{
 		"build" : ".",

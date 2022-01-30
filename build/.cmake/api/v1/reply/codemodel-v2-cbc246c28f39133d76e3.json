@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "picture_extract",
+					"name" : "jibian",
 					"targetIndexes" : 
 					[
 						0,
@@ -290,9 +290,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "picture_extract::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-picture_extract-Debug-39df8b1c13ecde3e1fb8.json",
-					"name" : "picture_extract",
+					"id" : "jibian::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-jibian-Debug-e8c1bd04975ad8b100ab.json",
+					"name" : "jibian",
 					"projectIndex" : 0
 				}
 			]
