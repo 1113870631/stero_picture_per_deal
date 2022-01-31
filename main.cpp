@@ -25,52 +25,58 @@ int main(void)
 {
 
     //相机一 内参
-    cameraMatrix1.at<double>(0, 0) = 1.3448e+03;
+    cameraMatrix1.at<double>(0, 0) = 1.3513e+03;
     cameraMatrix1.at<double>(0, 1) = 0;
-    cameraMatrix1.at<double>(0, 2) = 632.7378;
+    cameraMatrix1.at<double>(0, 2) = 628.1604;
+
     cameraMatrix1.at<double>(1, 0) = 0;
-    cameraMatrix1.at<double>(1, 1) = 1.3449e+03;
-    cameraMatrix1.at<double>(1, 2) = 394.2633;
+    cameraMatrix1.at<double>(1, 1) = 1.3511e+03;
+    cameraMatrix1.at<double>(1, 2) = 383.6009;
+
     cameraMatrix1.at<double>(2, 0) = 0;
     cameraMatrix1.at<double>(2, 1) = 0;
     cameraMatrix1.at<double>(2, 2) = 1;
     //相机二 内参
-    cameraMatrix2.at<double>(0, 0) = 1.3498e+03;
+    cameraMatrix2.at<double>(0, 0) = 1.3556e+03;
     cameraMatrix2.at<double>(0, 1) = 0;
-    cameraMatrix2.at<double>(0, 2) = 681.2540;
+    cameraMatrix2.at<double>(0, 2) = 691.5902;
+
     cameraMatrix2.at<double>(1, 0) = 0;
-    cameraMatrix2.at<double>(1, 1) = 1.3504e+03;
-    cameraMatrix2.at<double>(1, 2) = 425.1629;
+    cameraMatrix2.at<double>(1, 1) = 1.3555e+03;
+    cameraMatrix2.at<double>(1, 2) = 412.2236;
+
     cameraMatrix2.at<double>(2, 0) = 0;
     cameraMatrix2.at<double>(2, 1) = 0;
     cameraMatrix2.at<double>(2, 2) = 1;
     //相机一   畸变参数
-     distCoeffs1.at<double>(0, 0) = -0.4244; // k1
-    distCoeffs1.at<double>(1, 0) = 0.1946;  // k2
+     distCoeffs1.at<double>(0, 0) = -0.4356; // k1
+    distCoeffs1.at<double>(1, 0) = 0.2390;  // k2
     distCoeffs1.at<double>(2, 0) = 0; //p1
     distCoeffs1.at<double>(3, 0) = 0; //p2
     distCoeffs1.at<double>(4, 0) = 0; //k3
     //相机二  畸变参数 
-     distCoeffs2.at<double>(0, 0) = -0.4528; // k1
-    distCoeffs2.at<double>(1, 0) = 0.2865;  // k2
+     distCoeffs2.at<double>(0, 0) = -0.4401; // k1
+    distCoeffs2.at<double>(1, 0) = 0.2626;  // k2
     distCoeffs2.at<double>(2, 0) = 0; //p1
     distCoeffs2.at<double>(3, 0) = 0; //p2
     distCoeffs2.at<double>(4, 0) = 0; //k3
 
     //旋转转换矩阵
     R.at<double>(0, 0) = 1;
-    R.at<double>(0, 1) = -4.3111e-04;
-    R.at<double>(0, 2) = -0.0041;
-    R.at<double>(1, 0) = 4.5293e-04;
+    R.at<double>(0, 1) = -1.9888e-04;
+    R.at<double>(0, 2) = -0.0061;
+
+    R.at<double>(1, 0) = -2.2428e-04;
     R.at<double>(1, 1) = 1;
-    R.at<double>(1, 2) = 0.0053;
-    R.at<double>(2, 0) = 0.0041;
-    R.at<double>(2, 1) = -0.0053;
+    R.at<double>(1, 2) = -0.0042;
+
+    R.at<double>(2, 0) = 0.0061;
+    R.at<double>(2, 1) = 0.0042;
     R.at<double>(2, 2) = 1;
     //平移
-    T.at<double>(0, 0) = 59.9327;
-    T.at<double>(1, 0) = 0.0793;
-    T.at<double>(2, 0) = 0.5583;
+    T.at<double>(0, 0) = 60.0013;
+    T.at<double>(1, 0) = -0.1181;
+    T.at<double>(2, 0) = 0.3540;
 
 
      stereoRectify( cameraMatrix1,  distCoeffs1,
@@ -79,7 +85,7 @@ int main(void)
                                   R1,  R2,
                                   P1,  P2,
                                   Q,  CALIB_ZERO_DISPARITY,
-                                  1,  Size(1280,720),&validPixROI1,&validPixROI2);
+                                  -1,  Size(1280,720),&validPixROI1,&validPixROI2);// -1  为重要参数
 
       initUndistortRectifyMap( cameraMatrix1,  distCoeffs1,R1,P1,Size(1280,720), CV_32FC1,  map11,  map12 ); 
       initUndistortRectifyMap( cameraMatrix2,  distCoeffs2,R2,P2,Size(1280,720), CV_32FC1,  map21,  map22 ); 
@@ -90,7 +96,7 @@ int main(void)
    string name;
 
 
-    int j=9;
+    int j=34;
     for(int i=0;i<j;i++)
     {
       
@@ -126,14 +132,14 @@ int main(void)
          }
          
          imshow("7",tmp7);
-          imshow("6",tmp6);
+         imshow("6",tmp6);
      }
      
 
     //rectangle(tmp4,validPixROI1.tl() , validPixROI1.br(), cv::Scalar(0, 255, 255), 2, 4);
      //rectangle(tmp5,validPixROI2.tl() , validPixROI2.br(), cv::Scalar(0, 255, 255), 2, 4);
      imwrite("./out/"+name+"_r"+".jpg",tmp4);
-      imwrite("./out/"+name+"_l"+".jpg",tmp5);
+     imwrite("./out/"+name+"_l"+".jpg",tmp5);
       
    }
 waitKey(0);
