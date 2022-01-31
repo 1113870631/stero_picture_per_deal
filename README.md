@@ -1,0 +1,2 @@
+# stero_picture_per_deal
+分离后单张图片为1280x720
