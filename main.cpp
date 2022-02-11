@@ -85,7 +85,7 @@ int main(void)
                                   R1,  R2,
                                   P1,  P2,
                                   Q,  CALIB_ZERO_DISPARITY,
-                                  -1,  Size(1280,720),&validPixROI1,&validPixROI2);// -1  为重要参数
+                                  0,  Size(1280,720),&validPixROI1,&validPixROI2);// -1  为重要参数
 
       initUndistortRectifyMap( cameraMatrix1,  distCoeffs1,R1,P1,Size(1280,720), CV_32FC1,  map11,  map12 ); 
       initUndistortRectifyMap( cameraMatrix2,  distCoeffs2,R2,P2,Size(1280,720), CV_32FC1,  map21,  map22 ); 
@@ -113,7 +113,8 @@ int main(void)
      Mat tmp4,tmp5,tmp6,tmp7;
      remap(tmp2,tmp4,map11,map12,INTER_LINEAR,BORDER_TRANSPARENT,0);
      remap(tmp3,tmp5,map21,map22,INTER_LINEAR,BORDER_TRANSPARENT,0);
-     if(i==0)
+     // 3 14
+     if(i==14)
      {
          imshow("tmp4",tmp4);
          imshow("tmp5",tmp5);
@@ -130,16 +131,16 @@ int main(void)
              
 
          }
-         
-         imshow("7",tmp7);
-         imshow("6",tmp6);
+         imshow("row",tmp);
+         imshow("lift",tmp7);
+         imshow("right",tmp6);
      }
      
 
     //rectangle(tmp4,validPixROI1.tl() , validPixROI1.br(), cv::Scalar(0, 255, 255), 2, 4);
      //rectangle(tmp5,validPixROI2.tl() , validPixROI2.br(), cv::Scalar(0, 255, 255), 2, 4);
-     imwrite("./out/"+name+"_r"+".jpg",tmp4);
-     imwrite("./out/"+name+"_l"+".jpg",tmp5);
+     imwrite("./out/"+name+"_r"+".jpg",tmp5);
+     imwrite("./out/"+name+"_l"+".jpg",tmp4);
       
    }
 waitKey(0);
