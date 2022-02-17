@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/ww/opencv/biaoding/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/jibian.dir/main.cpp.o -c /home/ww/opencv/biaoding/main.cpp",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7 -isystem /usr/local/include/opencv4 -g -o CMakeFiles/jibian.dir/main.cpp.o -c /home/ww/opencv/biaoding/main.cpp",
   "file": "/home/ww/opencv/biaoding/main.cpp"
 }
 ]
