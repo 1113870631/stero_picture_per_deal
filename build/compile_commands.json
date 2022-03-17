@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/ww/opencv/biaoding/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/jibian.dir/main.cpp.o -c /home/ww/opencv/biaoding/main.cpp",
-  "file": "/home/ww/opencv/biaoding/main.cpp"
+  "directory": "/home/ww/smart/stero_picture_per_deal/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include/opencv4  -g   -std=gnu++11 -o CMakeFiles/jibian.dir/main.cpp.o -c /home/ww/smart/stero_picture_per_deal/main.cpp",
+  "file": "/home/ww/smart/stero_picture_per_deal/main.cpp"
 }
 ]

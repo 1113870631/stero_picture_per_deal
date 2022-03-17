@@ -12,7 +12,7 @@ for FILE in ./*.jpg
 for file in `ls`;do
         #echo $file
         tmp1=${file##*.}
-        tmp2="jpg"
+        tmp2="jpeg"
         #echo $tmp1
         #echo $tmp2
        if [ $tmp1 = $tmp2 ] #判断后缀名是否为图片

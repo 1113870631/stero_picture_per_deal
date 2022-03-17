@@ -81,14 +81,14 @@ int main(void)
 
      stereoRectify( cameraMatrix1,  distCoeffs1,
                                   cameraMatrix2,  distCoeffs2,
-                                 Size(1280,720),  R,  T,
+                                 Size(640,480),  R,  T,
                                   R1,  R2,
                                   P1,  P2,
                                   Q,  CALIB_ZERO_DISPARITY,
-                                  -1,  Size(1280,720),&validPixROI1,&validPixROI2);// -1  为重要参数
+                                  -1,  Size(640,480),&validPixROI1,&validPixROI2);// -1  为重要参数
 
-      initUndistortRectifyMap( cameraMatrix1,  distCoeffs1,R1,P1,Size(1280,720), CV_32FC1,  map11,  map12 ); 
-      initUndistortRectifyMap( cameraMatrix2,  distCoeffs2,R2,P2,Size(1280,720), CV_32FC1,  map21,  map22 ); 
+      initUndistortRectifyMap( cameraMatrix1,  distCoeffs1,R1,P1,Size(640,480), CV_32FC1,  map11,  map12 ); 
+      initUndistortRectifyMap( cameraMatrix2,  distCoeffs2,R2,P2,Size(640,480), CV_32FC1,  map21,  map22 ); 
       
 
 
@@ -96,7 +96,7 @@ int main(void)
    string name;
 
 
-    int j=34;
+    int j=30;
     for(int i=0;i<j;i++)
     {
       
@@ -138,8 +138,11 @@ int main(void)
 
     //rectangle(tmp4,validPixROI1.tl() , validPixROI1.br(), cv::Scalar(0, 255, 255), 2, 4);
      //rectangle(tmp5,validPixROI2.tl() , validPixROI2.br(), cv::Scalar(0, 255, 255), 2, 4);
-     imwrite("./out/"+name+"_r"+".jpg",tmp4);
-     imwrite("./out/"+name+"_l"+".jpg",tmp5);
+     imwrite("./out/R/"+name+"_r"+".jpg",tmp4);
+     imwrite("./out/L/"+name+"_l"+".jpg",tmp5);
+
+     imwrite("./out/"+name+"_r"+".jpg",tmp2);
+     imwrite("./out/"+name+"_l"+".jpg",tmp3);
       
    }
 waitKey(0);
